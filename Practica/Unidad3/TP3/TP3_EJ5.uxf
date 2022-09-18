@@ -1,0 +1,55 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>20</y><w>100</w><h>30</h></coordinates><panel_attributes>TP3_EJ5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>120</y><w>140</w><h>90</h></coordinates><panel_attributes>Jornada
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>360</y><w>140</w><h>120</h></coordinates><panel_attributes>Partido
+--
+- equipoLocal
+- equipoVisitante
+- golesLocal
+- golesVisitante
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>270</y><w>110</w><h>60</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Inscribible
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>60</y><w>140</w><h>100</h></coordinates><panel_attributes>Torneo
+--
+_- PTOS_EMPATE=1_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>420</y><w>140</w><h>80</h></coordinates><panel_attributes>Equipo
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>380</y><w>210</w><h>150</h></coordinates><panel_attributes>Futbol11
+--
+_- CANTJUGADORES=8_
+_- PTOS_GANADOR=3_
+_- PTOS_PERDEDOR=0_
+_- VALLA_INVICTA=0_
+_- GANA_MAS4_GOLES=0_
+_- EMPATE_CON3_GOLES=0_
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>210</y><w>180</w><h>140</h></coordinates><panel_attributes>Futbol8
+--
+_- CANTJUGADORES=8_
+_- PTOS_GANADOR=3_
+_- PTOS_PERDEDOR=1_
+_- VALLA_INVICTA=1_
+_- GANA_MAS4_GOLES=0_
+_- EMPATE_CON3_GOLES=1_
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>30</y><w>190</w><h>140</h></coordinates><panel_attributes>Futbol5
+--
+_- CANT_JUGADORES=5_
+_- PTOS_GANADOR=2_
+_- PTOS_PERDEDOR=0_
+_- VALLA_INVICTA=0_
+_- GANA_MAS4_GOLES=1_
+_- EMPATE_CON3_GOLES=2_
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>200</y><w>80</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+- partidos
+m1=*</panel_attributes><additional_attributes>10;160;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>110</y><w>260</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+- jornadas
+m1=*</panel_attributes><additional_attributes>10;50;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>320</y><w>130</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;110;100</additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>150</y><w>120</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;120;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>150</y><w>80</w><h>290</h></coordinates><panel_attributes>lt=&lt;-
+- equipos
+m1=*</panel_attributes><additional_attributes>10;270;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>130</y><w>150</w><h>270</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;130;250</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>110</y><w>200</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;180;140</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>60</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;30;210;10</additional_attributes></element></diagram>

@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red37\green82\blue96;\red255\green255\blue255;\red255\green255\blue11;
+\red255\green255\blue255;\red37\green82\blue96;\red0\green0\blue0;\red255\green255\blue255;\red37\green82\blue96;
+\red0\green0\blue0;\red214\green214\blue213;\red52\green52\blue52;}
+{\*\expandedcolortbl;;\cssrgb\c18519\c39326\c45185;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c100000\c100000\c0;
+\cssrgb\c100000\c100000\c99985\c0;\cssrgb\c18608\c39435\c45271;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99971\c0;\cssrgb\c18696\c39545\c45357;
+\cssrgb\c0\c1\c1;\cssrgb\c86858\c86858\c86641;\cssrgb\c26667\c26667\c26667;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww24420\viewh14280\viewkind0
+\deftab720
+\pard\pardeftab720\sa150\partightenfactor0
+
+\f0\b\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\ul \ulc2 Enunciado
+\f1\b0 \ulnone \
+El Taller Mec\'e1nico Ort Boxes nos contrata para realizar un programa para poder tener una mejor administraci\'f3n de los servicios que realiza. Ellos son: cambio de aceite, alineaci\'f3n y encendido.\
+De cada servicio que se realiza se sabe:\
+	String descripcion\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0double porcentaje ganancia\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0String patente\
+y para cada tipo de servicio var\'eda su \cf4 \cb5 precio de venta\cf2 \cb3 \'a0 y su \cf4 \cb5 precio de costo.\cf2 \cb3 \
+\'a0\
+Adem\'e1s cada servicio es Detallable, lo que permite mostrar por pantalla qu\'e9 tipo de servicio es, la patente del veh\'edculo y el precio de la venta del servicio.\
+\'a0\
+El modo de c\'e1lculo del costo de los servicios var\'eda para cada uno de ellos:\
+\uc0\u9679 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf7 \cb5 Cambio de Aceite\cf2 \cb3 : de este servicio se sabe la cantidad de horas que va a llevar (int). Es \cf2 \ul \ulc2 Cotizable por mano de obra y Cotizable por materiales\cf2 \ulnone . Esto significa que el costo del mismo es la suma del costo de las horas m\'e1s el costo de los materiales.\
+\cf4 \cb5 \uc0\u9679 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\cb8 Alineaci\'f3n\cb5 : de este servicio se sabe la cantidad de horas que va a llevar (int), si se incluye tambi\'e9n balanceo o no (boolean) y un importe extra que es el costo del balanceo (double). \cb5 \ul Es Cotizable por mano de obra\cb5 \ulnone . Esto significa que el costo del mismo es el costo de las horas. Si incluyera tambi\'e9n balanceo, a ese costo debe sumarse el valor extra por balanceo.\cf2 \cb3 \
+\uc0\u9679 \'a0\'a0\'a0\'a0\'a0\'a0\'a0 \cf7 \cb5 Encendido\cf2 \cb3 : este servicio es \cf2 \ul \ulc2 Cotizable por materiales\cf2 \ulnone . Esto significa que el costo del mismo es el costo de los materiales.\
+\'a0\
+Los costos tienen dos formas de calcularse, dependiendo del tipo de servicio (si para su c\'e1lculo se incluyen horas, insumos, o ambas):\
+\uc0\u9679 \'a0\'a0\'a0\'a0\'a0 Si su costo incluye horas (mano de obra), se calcula multiplicando la cantidad de horas utilizadas para el servicio por el valor fijo de la hora.\
+\uc0\u9679 \'a0\'a0\'a0\'a0\'a0 Si el costo incluye insumos, el mismo se calcula sumando el costo de los materiales (material1 + material2).\
+\'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 Finalmente, el precio de venta para todos los servicios se calcula agregando al precio de costo el porcentaje de ganancia (general y \'fanico). \
+\
+\
+\pard\pardeftab720\sa150\partightenfactor0
+\cf2 \
+Diagrama de clases INCOMPLETO de la soluci\'f3n: (En el proyecto)\
+\pard\pardeftab720\sa150\partightenfactor0
+\cf2 {{\NeXTGraphic Parcial1.png \width14660 \height9580 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\sa150\partightenfactor0
+\cf2 \
+\
+Para aprobar el examen se deber\'e1 realizar lo siguiente:\
+\'a0(en caso de necesitar alg\'fan getter, setter o implementar herencia se podr\'e1 agregar)\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf4 \cb5 \kerning1\expnd0\expndtw0 {\listtext	1	}\cb5 \expnd0\expndtw0\kerning0
+Completar (atributos y constructor) de la clase servicio\
+\ls1\ilvl0\cb5 \kerning1\expnd0\expndtw0 {\listtext	2	}\cb5 \expnd0\expndtw0\kerning0
+Completar (atributos y constructor) de la clases Encendido, Alineaci\'f3n y Cambio de aceite\cf2 \cb3 \
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	3	}\cf2 \expnd0\expndtw0\kerning0
+Implementar el m\'e9todo detallar donde corresponda\
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	4	}\cf2 \expnd0\expndtw0\kerning0
+Implementar el m\'e9todo calcularCostoHoras donde corresponda\
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	5	}\cf2 \expnd0\expndtw0\kerning0
+Implementar el m\'e9todo calcularCostoMateriales donde corresponda\
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	6	}\cf2 \expnd0\expndtw0\kerning0
+implementar el m\'e9todo calcularPrecioCosto donde corresponda\
+\ls1\ilvl0\cf4 \cb8 \kerning1\expnd0\expndtw0 {\listtext	7	}\cb8 \expnd0\expndtw0\kerning0
+Completar (atributos y constructor) de la clase TallerMecanico\cb5 \
+\ls1\ilvl0\cb8 \kerning1\expnd0\expndtw0 {\listtext	8	}\cb8 \expnd0\expndtw0\kerning0
+Completar el m\'e9todo agregarServicio que devuelve un boolean de la clase TallerMecanico. Recibe un servicio y si este no es nulo se agrega a la lista de servicios de lo contrario no hace nada. En caso de que se haya podido agregar se devuelve true de lo contrario false.\cb5 \
+\ls1\ilvl0\cb8 \kerning1\expnd0\expndtw0 {\listtext	9	}\cb8 \expnd0\expndtw0\kerning0
+Completar el m\'e9todo listarServicios de la clase TallerMecanico, el cual lista la cantidad de servicios efectuados para cada tipo de servicio \cf2 \cb3 y adem\'e1s muestra el total de las ventas de todos los servicios (sumatoria de sus precios de venta).\
+\pard\pardeftab720\sa150\partightenfactor0
+\cf2 \'a0\
+NOTA: Esta clase no deber\'e1 ser modificada por los alumnos.\
+\'a0\
+\pard\pardeftab720\partightenfactor0
+\cf2 La ejecuci\'f3n de la clase Parcial1 deber\'e1 arrojar el siguiente resultado: \
+\
+\
+\pard\pardeftab720\sa150\partightenfactor0
+\cf2 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clcbpat12 \clwWidth6442\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt133 \clpadl133 \clpadb133 \clpadr133 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\fs21\fsmilli10667 \cf10 \cb5 Se agrego el servicio: Cambio de aceite 1\uc0\u8232 servicio de CambioAceite\u8232 Patente AB404AC Precio: 2982.0\u8232 No se agrego el servicio\u8232 Se agrego el servicio: Cambio de aceite 2\u8232 servicio de CambioAceite\u8232 Patente AUA898 Precio: 3228.0\u8232 Se agrego el servicio: Cambio de aceite 3\u8232 servicio de CambioAceite\u8232 Patente AC392BC Precio: 2462.4\u8232 No se agrego el servicio\u8232 Se agrego el servicio: Alineacion 1\u8232 servicio de Alineacion\u8232 Patente HBC343 Precio: 147.6\u8232 Se agrego el servicio: Alineacion 2\u8232 servicio de Alineacion\u8232 Patente IJM444 Precio: 895.2\u8232 Se agrego el servicio: Encendido 1\u8232 servicio de Encendido\u8232 Patente AD391BC Precio: 1743.0\u8232 Se agrego el servicio: Encendido 2\u8232 servicio de Encendido\u8232 Patente AC422DC Precio: 1743.0\u8232 Taller Ort Boxes\u8232 Se efectuaron: 3 cambios de aceite, 2 encendido y 2 alineacion\u8232 El importe total de ventas es de $13201.2
+\fs30 \cf10 \cb5 \cell \lastrow\row
+}
